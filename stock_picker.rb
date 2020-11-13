@@ -7,7 +7,7 @@ def stock_picker(array)
 
   #Set up the first loop
   array.each.with_index do |num, index|
-    #Store the comparison value 
+    #Store the consistent comparison value 
     min_value = array[index]
 
     #Iterate through rest of array to compare min and max value
@@ -25,12 +25,9 @@ def stock_picker(array)
         start_date = index
         end_date = index2
       end
-
-
     end
-
-
   end
+
   return [start_date, end_date]
 end
 
